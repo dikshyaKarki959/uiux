@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0 20PX;
+        }
+        /*.nav_links{
+            background-color:blue;}*/
+        
+         nav,ul, .nav_links{
+            display: flex;
+            align-items: center;
+            
+         }
+         ul{
+            text-decoration:none;
+            list-style-type: none;
+         }
+        /* ul{
+            background-color: aquamarine;  */
+         
+         nav{
+            justify-content:space-around;
+         }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .footer {
+            background-color: white;
+            padding: 40px 80px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-column {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .footer-column h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .footer-column p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+        .footer-column ul {
+           
+            list-style: none;
+            padding: 0;
+        }
+        .footer-column ul li {
+            
+            margin-bottom: 10px;
+        }
+        .footer-column ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+        .contact-info {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .contact-info img {
+            width: 16px;
+            margin-right: 8px;
+        }
+        .info,.info1,.info2{
+        display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 10px;
+            width: 16px;
+            margin-right: 8px;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav_links">
+            <div class="logo">
+                <img src="https://nokshi-2.myshopify.com/cdn/shop/files/booken-logo_150x.png?v=1615364709" alt="logo">
+            
+            </div>
+            <ul>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Shop</li>
+                <li>Blog</li>
+                <li>Contact us</li>
+                
+                
+
+                
+            </ul>
+    
+            <div>
+                <div>
+                    <a href=""><i class="fa-solid fa-house-user"></i></a>
+                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                
+                </div>
+
+                
+            </div>
+        </nav>
+        
+    </header>
+   <div>
+    <center><form action="">
+        
+        <H1>CREATE ACCOUNT</H1>
+          <p>Please Register using account detail bellow.</p>
+          <label for=""> Name *</label>
+               
+          <input type="text" id=""><br>
+              <label for="">Email </label>
+              <input type="email" id=""><br>
+              <label for="">Last Name</label>
+              <input type="text" id=""><br>
+              <label for="">Password</label>
+              <input type="password" id=""><br>
+  
+              <button type="submit">Create</button>
+              <p>Return to store</p>
+              </form>
+            </center>
+    
+   </div>
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>ABOUT INFO</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor inci ut labore et dolore.</p>
+            <div class="contact-info"><span>📍</span> Address: 123 Pall Mall, London England</div>
+            <div class="contact-info"><span>📧</span> Email: hello@example.com</div>
+            <div class="contact-info"><span>📞</span> Phone: (012) 345 6789</div>
+        </div>
+        <div class="footer-column">
+            <h3>INFORMATION</h3>
+            
+                <div class="info">Sign in</div>
+            <div class="info">View Cart </div>
+           <div class="info">My whishlist</div>
+            <div class="info">Track my order</div>
+            <div class="info">Help</div>
+            
+                
+            
+        </div>
+        <div class="footer-column">
+            <h3>INFO LINKS</h3>
+            <div class="info1">Home</div>
+            <div class="info1">About us</div>
+           <div class="info1">Shop</div>
+            <div class="info1">Blog</div>
+            <div class="info1">Contact us</div>
+        </div>
+        <div class="footer-column">
+            <h3>SUPPORT AREA</h3>
+            <div class="info2">Hello & contact</div>
+            <div class="info2">Shipping and tax</div>
+           <div class="info2">Return Policy</div>
+            <div class="info2">Affiliates</div>
+            <div class="info2">Legal Notice</div>
+        </div>
+    </footer>
+</body>
+</html>
